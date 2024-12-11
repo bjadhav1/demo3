@@ -1,1 +1,4 @@
 
+steps:
+  - name: Get public IP
+    run: curl -s https://ifconfig.me
