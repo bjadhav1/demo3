@@ -1,3 +1,14 @@
-steps:
-  - name: Get public IP
-    run: curl -s https://ifconfig.me
+name: Test API Connectivity
+
+on:
+  push:
+    branches:
+      - main
+
+      
+jobs:
+  test-api:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Get public IP
+      run: curl -s https://ifconfig.me
